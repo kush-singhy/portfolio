@@ -1,12 +1,15 @@
 import "./App.css";
-import Navbar from "./Navbar";
 import { ChakraProvider } from "@chakra-ui/react";
+import Contact from "./Contact";
+import { Container } from "@chakra-ui/react";
 
 function App() {
   return (
     <ChakraProvider>
       <div>
-        <Navbar />
+        <Container padding={50}>
+          <Contact />
+        </Container>
       </div>
     </ChakraProvider>
   );
