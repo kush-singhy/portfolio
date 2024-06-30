@@ -4,11 +4,11 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  font: 300 11px/1.4 'Poppins', sans-serif;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #89c8ea;
+  background: #fff;
   overflow: hidden;
   display: block;
 }
