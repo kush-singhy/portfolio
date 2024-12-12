@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --border-radius-default: 50%;
+  --border-radius-hover: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,4 +23,23 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 2rem;
+}
+
+@layer components {
+  .social-icon {
+    @apply relative flex items-center justify-center w-9 h-9 p-[6px] border border-gray-900 cursor-pointer transition-all;
+    border-radius: var(--border-radius-default);
+    transition: border-radius 0.3s ease, background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    border-radius: var(--border-radius-hover);
+    background-color: #4b5563;
+    color: #ffffff;
+  }
+
+  .social-text {
+    @apply absolute w-auto p-2 m-2 min-w-max top-8 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-200 origin-top scale-0;
+  }
 }
