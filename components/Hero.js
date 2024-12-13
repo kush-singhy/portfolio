@@ -12,10 +12,9 @@ export default function Hero() {
         id="hero-text"
         className="flex-initial w-7/12 flex flex-col justify-center"
       >
-        <h1 className="text-5xl font-bold leading-relaxed">Hi, Kush here ✌🏼</h1>
+        <h1 className="text-5xl font-bold leading-relaxed">Hi, I'm Kush ✌🏼</h1>
         <p className="text-2xl mb-5">
-          I&apos;m obsessed with understanding user needs, focusing on
-          what&apos;s important, and presenting my work beautifully.
+          A software developer who likes making pretty apps and running really far.
         </p>
         <div id="social-icons" className="flex gap-3">
           <SocialIcon

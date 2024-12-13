@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import Title from '@/components/Title.js';
 import reactIcon from '@/assets/react.svg';
 import tailwindIcon from '@/assets/tailwind.svg';
 import javascriptIcon from '@/assets/javascript.svg';
@@ -12,9 +13,7 @@ import route53Icon from '@/assets/route53.svg';
 export default function TechStack() {
   return (
     <div id="tech-stack" className="flex flex-col items-center justify-center">
-      <h2 className="text-xl font-medium border border-gray-900 rounded-full px-4 py-1 mb-7">
-        Tech Stack
-      </h2>
+      <Title text="Tech Stack" />
       <div id="tech-stack-icons" className="grid grid-cols-8 gap-4">
         <TechStackIcon src={javascriptIcon} text="Javascript" />
         <TechStackIcon src={reactIcon} text="React" />
