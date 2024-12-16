@@ -42,16 +42,12 @@ body {
   }
 
   .tech-stack-icon {
-    @apply relative flex items-center justify-center w-12 h-12 p-[6px] border border-gray-900 transition-all;
+    @apply relative flex items-center justify-center transition-all;
     border-radius: 0.8rem;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  .tech-stack-icon:hover {
-    background-color: #000;
-  }
-
   .tech-stack-text {
-    @apply absolute z-50 w-auto p-2 m-2 min-w-max top-11 rounded-md shadow-md text-white bg-gray-900 text-sm font-bold transition-all duration-200 origin-top scale-0;
+    @apply absolute z-50 w-auto p-2 m-2 min-w-max top-8 rounded-md shadow-md text-white bg-gray-900 text-sm font-bold transition-all duration-200 origin-top scale-0;
   }
 }

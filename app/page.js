@@ -9,13 +9,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TechStack />
-      <Divider />
       <Experience />
     </div>
   );
 }
 
-
 function Divider() {
-  return <hr className="border-t border-gray-400 my-20" />
+  return <hr className="border-t border-gray-400 my-20" />;
 }
