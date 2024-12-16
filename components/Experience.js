@@ -12,21 +12,33 @@ export default function Experience() {
           id="experience-card"
           className="w-[440px] p-4 rounded-xl bg-[#F2F2F7]"
         >
-          <div>
+          <div className="flex gap-3 mb-3">
             <Image src={westpacLogo} alt="Westpac" />
             <div>
-              <h2>Westpac</h2>
-              <p>UI Developer</p>
+              <h2 className="text-xl font-semibold">Westpac</h2>
+              <p className="text-gray-600">UI Developer</p>
             </div>
           </div>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Vestibulum congue sapien et odio feugiat, vitae sollicitudin quam
-              rhoncus.
-            </li>
-            <li>Quisque ut velit sed ipsum varius varius.</li>
-          </ul>
+          <div>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+        <div
+          id="experience-card"
+          className="w-[440px] p-4 rounded-xl bg-[#F2F2F7]"
+        >
+          <div className="flex gap-3 mb-3">
+            <Image src={unswLogo} alt="UNSW" />
+            <div>
+              <h2 className="text-xl font-semibold">UNSW</h2>
+              <p className="text-gray-600">
+                B. Computer Science & B. Actuarial Studies
+              </p>
+            </div>
+          </div>
+          <div>
+            <p>Lorem Ipsum</p>
+          </div>
         </div>
       </div>
     </div>

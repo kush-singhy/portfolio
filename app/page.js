@@ -6,7 +6,7 @@ import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
-    <div className="max-w-screen-lg flex flex-col justify-center">
+    <div className="mx-auto antialiased">
       <Navbar />
       <Hero />
       <TechStack />
