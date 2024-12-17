@@ -3,7 +3,7 @@ import Title from './Title';
 
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full">
       <Title text="Projects" />
       <div id="project-card" className="w-full p-4 rounded-xl bg-[#F2F2F7]">
         <div className="flex justify-between">

@@ -13,7 +13,7 @@ export default function TechStack() {
       id="tech-stack"
       className="flex flex-col items-center justify-center mb-16"
     >
-      <h2 className="text-base font-bold mb-3">Tech Stack</h2>
+      <h2 className="text-base font-bold mb-3">Current Technologies</h2>
       <div id="tech-stack-icons" className="grid grid-cols-6 gap-3">
         <TechStackIcon src={javascriptIcon} text="Javascript" />
         <TechStackIcon src={reactIcon} text="React" />

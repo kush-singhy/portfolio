@@ -4,10 +4,11 @@ import { FiYoutube } from 'react-icons/fi';
 import { FaMediumM } from 'react-icons/fa';
 import { FiMapPin } from 'react-icons/fi';
 import { FiCalendar } from 'react-icons/fi';
+import { FiLinkedin } from 'react-icons/fi';
 
 export default function Hero() {
   return (
-    <div id="hero" className="flex flex-col items-center py-9 max-w-4xl">
+    <div id="hero" className="flex flex-col items-center py-9 mt-24">
       <h1 className="text-5xl font-semibold leading-relaxed text-center">
         Hi, I&apos;m Kush ✌🏼
       </h1>
@@ -25,6 +26,11 @@ export default function Hero() {
           icon={<FiYoutube className="w-5 h-5" />}
           text="Videos"
           url="https://www.youtube.com/@kushsinghy"
+        />
+        <SocialIcon
+          icon={<FiLinkedin className="w-5 h-5" />}
+          text="Work"
+          url="https://www.linkedin.com/in/kush-singhy/"
         />
         <SocialIcon
           icon={<FaMediumM className="w-5 h-5" />}

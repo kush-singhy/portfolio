@@ -6,7 +6,7 @@ import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
-    <div className="mx-auto antialiased">
+    <div className="mx-auto antialiased relative">
       <Navbar />
       <Hero />
       <TechStack />
@@ -14,8 +14,4 @@ export default function Home() {
       <Projects />
     </div>
   );
-}
-
-function Divider() {
-  return <hr className="border-t border-gray-400 my-20" />;
 }
