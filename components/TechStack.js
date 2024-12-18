@@ -29,7 +29,13 @@ export default function TechStack() {
       id="tech-stack"
       className="flex flex-col items-center justify-center mb-32"
     >
-      <h2 className="text-base font-bold mb-3">Current Technologies</h2>
+      <motion.h2
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        className="text-base font-bold mb-3"
+      >
+        Current Technologies
+      </motion.h2>
       <motion.div
         id="tech-stack-icons"
         className="grid grid-cols-6 gap-3"
