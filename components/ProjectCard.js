@@ -10,7 +10,7 @@ export default function ProjectCard({
   imageUrl,
 }) {
   return (
-    <div className="w-full max-w-2xl pt-4 px-4 mb-14 rounded-xl bg-[#F2F2F7] relative">
+    <div className="w-full max-w-2xl pt-4 px-4 mb-14 rounded-xl bg-[#F2F2F7] relative ">
       <div className="flex justify-between mb-10">
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-semibold">{name}</h2>
