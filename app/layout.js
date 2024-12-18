@@ -2,7 +2,7 @@ import { Urbanist } from 'next/font/google';
 import './globals.css';
 
 export const metadata = {
-  title: "Hi, I'm Kush",
+  title: 'Kush Singhy',
   description: 'Kush Singhy - Personal Portfolio',
 };
 
@@ -10,7 +10,6 @@ const urbanistFont = Urbanist({
   subsets: ['latin'],
   weights: ['400', '600'],
 });
-
 
 export default function RootLayout({ children }) {
   return (

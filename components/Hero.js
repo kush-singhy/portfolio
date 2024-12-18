@@ -8,7 +8,7 @@ import { FiLinkedin } from 'react-icons/fi';
 
 export default function Hero() {
   return (
-    <div id="hero" className="flex flex-col items-center py-9 mt-24">
+    <div id="hero" className="flex flex-col items-center mb-9 mt-36">
       <h1 className="text-5xl font-semibold leading-relaxed text-center">
         Hi, I&apos;m Kush ✌🏼
       </h1>

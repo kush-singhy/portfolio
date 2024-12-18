@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Experience() {
   return (
-    <div className="flex flex-col items-center gap-8 mb-16">
+    <div className="flex flex-col items-center gap-8 mb-32">
       <Title text="Experience" />
       <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-tl before:from-transparent before:via-slate-300 before:to-transparent">
         {/* <!-- Item #2 --> */}
