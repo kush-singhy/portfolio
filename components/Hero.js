@@ -1,6 +1,10 @@
 'use client';
+import TechStack from '@/components/TechStack';
+import Image from 'next/image';
 import { motion } from 'motion/react';
-import SocialIcon from './SocialIcon';
+
+import SocialIcon from '@/components/SocialIcon';
+import heroImage from '@/assets/hero-image.jpg';
 import { FiGithub } from 'react-icons/fi';
 import { FiYoutube } from 'react-icons/fi';
 import { FaMediumM } from 'react-icons/fa';
@@ -66,8 +70,10 @@ export default function Hero() {
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          className="w-56 h-56 border border-gray-900 rounded-full mb-4"
-        ></motion.div>
+          className="w-56 h-56 rounded-full mb-4 overflow-hidden shadow-[0px_4px_10px_rgba(0,0,0,0.2)]"
+        >
+          <Image src={heroImage} alt="Kush Singhy" layout="fit" />
+        </motion.div>
         <motion.div
           id="location"
           initial={{ scale: 0, x: 100 }}

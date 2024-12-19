@@ -1,6 +1,7 @@
-import Link from 'next/link';
+'use client';
 import Image from 'next/image';
 import ProjectLink from '@/components/ProjectLink';
+import { motion } from 'motion/react';
 
 export default function ProjectCard({
   name,
@@ -10,7 +11,12 @@ export default function ProjectCard({
   imageUrl,
 }) {
   return (
-    <div className="w-full max-w-2xl pt-4 px-4 mb-14 rounded-xl bg-[#F2F2F7] relative ">
+    <motion.div
+      initial={{ scale: 0.9, y: 50 }}
+      whileInView={{ scale: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: 'easeOut' }}
+      className="w-full max-w-2xl pt-4 px-4 mb-14 rounded-xl bg-[#F2F2F7] relative "
+    >
       <div className="flex justify-between mb-10">
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-semibold">{name}</h2>
@@ -31,6 +37,6 @@ export default function ProjectCard({
           style={{ clipPath: 'inset(-10px -10px 0px -10px)' }}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

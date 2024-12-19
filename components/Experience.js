@@ -11,19 +11,17 @@ export default function Experience() {
     <div id="experience" className="flex flex-col items-center gap-8 mb-32">
       <Title text="Experience" />
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 200 }}
+        animate={{ opacity: 1, y: 0 }}
         className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-tl before:from-transparent before:via-slate-300 before:to-transparent"
       >
-        <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
-          <ExperienceItem
-            title="Westpac"
-            role="UI Developer"
-            description="Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Duis
+        <ExperienceItem
+          title="Westpac"
+          role="UI Developer"
+          description="Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Duis
           vehicula consequat purus, nec venenatis ligula."
-            logo={westpacLogo}
-          />
-        </motion.div>
+          logo={westpacLogo}
+        />
 
         <ExperienceItem
           title="UNSW"
